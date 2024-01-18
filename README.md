@@ -74,7 +74,6 @@ https://firebase.google.com/
 
 <img width="1682" alt="image" src="https://github.com/scalamatsuri/2024.scalamatsuri.org/assets/4135267/09c28bd4-074f-40c9-bb63-49b111bc8763">
 
-
 ### 3. firebase-tools を使えるようにする
 
 https://firebase.google.com/docs/cli?hl=ja
@@ -115,3 +114,10 @@ $ firebase deploy --only hosting --token "1//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 Project Console: https://console.firebase.google.com/project/my-scalamatsuri-firebase-app/overview
 Hosting URL: https://my-scalamatsuri-firebase-app.web.app
 ```
+
+## `.github/workflows/publish-firebase-hosting-commit.yml` について
+
+開発 & 検証用に firebase hosting にデプロイするワークフロー。  
+`poc/**` ブランチに push された際に実行される。
+
+`Actions secrets and variables` に `ローカルのコンソールから firebase にログインする` の項目で取得したトークンを `FIREBASE_TOKEN` という名前で保存しておくこと。
