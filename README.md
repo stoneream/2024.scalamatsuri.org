@@ -123,5 +123,14 @@ Hosting URL: https://my-scalamatsuri-firebase-app.web.app
 
 | 変数名                     |                                                                                             |
 | :------------------------- | :------------------------------------------------------------------------------------------ |
-| `FIREBASE_TOKEN`           |                                                                                             |
 | `FIREBASE_SERVICE_ACCOUNT` | https://github.com/FirebaseExtended/action-hosting-deploy/blob/main/docs/service-account.md |
+
+### 備考
+
+検索にインデックスされないように使わないときはサイトを無効化しておく
+
+```bash
+firebase login
+
+firebase hosting:disable
+```
