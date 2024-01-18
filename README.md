@@ -117,7 +117,6 @@ Hosting URL: https://my-scalamatsuri-firebase-app.web.app
 
 ## `.github/workflows/publish-firebase-hosting-commit.yml` について
 
-開発 & 検証用に firebase hosting にデプロイするワークフロー。  
-`poc/**` ブランチに push された際に実行される。
+開発 & 検証用に firebase hosting にデプロイするワークフロー。
 
 `Actions secrets and variables` に `ローカルのコンソールから firebase にログインする` の項目で取得したトークンを `FIREBASE_TOKEN` という名前で保存しておくこと。
