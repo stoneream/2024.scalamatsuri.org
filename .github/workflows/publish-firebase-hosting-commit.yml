@@ -21,4 +21,3 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_TOKEN }}
           channelId: live
           projectId: stoneream-30687
-
