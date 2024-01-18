@@ -119,4 +119,9 @@ Hosting URL: https://my-scalamatsuri-firebase-app.web.app
 
 開発 & 検証用に firebase hosting にデプロイするワークフロー。
 
-`Actions secrets and variables` に `ローカルのコンソールから firebase にログインする` の項目で取得したトークンを `FIREBASE_TOKEN` という名前で保存しておくこと。
+`Actions secrets and variables` に 以下の値を設定
+
+| 変数名                     |                                                                                             |
+| :------------------------- | :------------------------------------------------------------------------------------------ |
+| `FIREBASE_TOKEN`           |                                                                                             |
+| `FIREBASE_SERVICE_ACCOUNT` | https://github.com/FirebaseExtended/action-hosting-deploy/blob/main/docs/service-account.md |
