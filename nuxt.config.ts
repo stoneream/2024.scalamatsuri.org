@@ -1,5 +1,8 @@
 export default defineNuxtConfig({
-  ssr: false,
+  ssr: true,
+  routeRules: {
+    '/': { prerender: false },
+  },
   css: ['~/assets/vendor/sanitize.css/sanitize.css', '~/assets/scss/main.scss'],
   vite: {
     css: {

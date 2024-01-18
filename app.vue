@@ -18,7 +18,8 @@ ja:
 <template>
   <div>
     <TheHeader />
-    <NuxtPage />
+    <slot />
+    <!-- <NuxtPage /> -->
     <LazySnsFooter />
     <LazySnsFlow />
     <TheFooter />
@@ -29,6 +30,8 @@ ja:
 const { t } = useI18n()
 const { year } = useAppConfig()
 const title = `ScalaMatsuri ${year}`
+
+
 useHead({
   title: t('defaultSiteName', { year: year }),
   titleTemplate: `%s | ${t('defaultSiteSubTitle')}`,
